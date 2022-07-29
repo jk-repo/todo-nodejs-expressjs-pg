@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><%=locals.title%></title>
+  <link rel="stylesheet" href="/static/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="/static/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="shortcut icon" href="/static/images/favicon.ico" />
+</head>
+
+<body>
+
+  
+  <div id="proBanner" class="row p-0 m-0 proBanner shadow-lg <%if(locals.message){%> d-block <%}else{%> d-none <%}%> <%if(locals.isSuccess){%>bg-green<%}else{%>bg-danger<%}%>">
+    <div class="col-md-12 p-0 m-0">
+      <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
+        <div class="ps-lg-1">
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="mb-0 font-weight-medium me-3 buy-now-text" id="errMessage"><%=locals.message%></p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <button id="bannerClose" class="btn border-0 p-0">
+            <i class="mdi mdi-close text-white me-0"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

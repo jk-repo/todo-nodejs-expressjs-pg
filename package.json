@@ -1,0 +1,32 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "typeorm": "typeorm-ts-node-commonjs -d src/ormconfig.ts",
+    "db:generate": "npm run typeorm migration:generate src/models/migrations/todos",
+    "db:create": "npm run typeorm migration:run",
+    "db:drop": "npm run typeorm schema:drop",
+    "dev": "nodemon src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express-session": "^1.17.5",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "nodemon": "^2.0.19",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.9.1",
+    "typeorm": "^0.3.7",
+    "typeorm-adapter": "^1.5.0",
+    "typescript": "^4.7.4"
+  }
+}
