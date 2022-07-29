@@ -7,3 +7,9 @@ Install Step
 2. npm install
 3. npm run db:create
 4. npm run dev
+
+-----------
+
+![Image](screenshot/login.png)
+![Image](screenshot/signup.png)
+![Image](screenshot/dashboard.png)
